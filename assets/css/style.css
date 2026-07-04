@@ -38,7 +38,7 @@
     /* Color Palette */
     --primary-color: hsl(215, 60%, 20%);
     --primary-light: hsl(215, 60%, 30%);
-    --secondary-color: hsl(210, 70%, 60%);
+    --secondary-color: hsl(210, 70%, 40%);
     --secondary-hover: hsl(210, 70%, 50%);
     --bg-color: hsl(210, 30%, 98%);
     --text-color: hsl(210, 25%, 12%);
