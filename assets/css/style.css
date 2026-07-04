@@ -565,7 +565,7 @@ header.scrolled {
 
 /* Footer */
 footer {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: rgba(255, 255, 255, 0.8);
     padding: 3rem 2rem 1.5rem;
 }
