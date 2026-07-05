@@ -36,8 +36,8 @@
 /* latin */
 :root {
     /* Color Palette */
-    --primary-color: hsl(215, 60%, 20%);
-    --primary-light: hsl(215, 60%, 30%);
+    --primary-color: hsl(210, 70%, 40%);
+    --primary-light: hsl(210, 70%, 50%); /* Slightly lighter for hover feedback */
     --secondary-color: hsl(210, 70%, 40%);
     --secondary-hover: hsl(210, 70%, 50%);
     --bg-color: hsl(210, 30%, 98%);
