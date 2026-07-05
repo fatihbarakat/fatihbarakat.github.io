@@ -37,9 +37,7 @@
 :root {
     /* Color Palette */
     --primary-color: hsl(210, 70%, 40%);
-    --primary-light: hsl(210, 70%, 50%); /* Slightly lighter for hover feedback */
-    --secondary-color: hsl(210, 70%, 40%);
-    --secondary-hover: hsl(210, 70%, 50%);
+    --primary-hover: hsl(210, 70%, 40%);
     --bg-color: hsl(210, 30%, 98%);
     --text-color: hsl(210, 25%, 12%);
     --text-muted: hsl(210, 15%, 45%);
@@ -51,16 +49,19 @@
     --font-heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     
-    /* Spacing */
-    --section-padding: 5rem 2rem;
-    
-    /* Shadows */
-    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.08);
-    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    /* Layout */
+    --max-width: 1200px;
+    --container-padding: 2rem;
     
     /* Transitions */
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -138,18 +139,18 @@ a {
 }
 
 .btn-primary:hover {
-    background: var(--primary-light);
+    background: var(--primary-color);
     transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: var(--white);
     box-shadow: var(--shadow-md);
 }
 
 .btn-secondary:hover {
-    background: var(--secondary-hover);
+    background: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -203,7 +204,7 @@ header.scrolled {
 }
 
 .logo span {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -226,7 +227,7 @@ header.scrolled {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     transition: var(--transition);
 }
 
@@ -268,7 +269,7 @@ header.scrolled {
     display: inline-block;
     padding: 0.4rem 1rem;
     background: rgba(55, 188, 155, 0.1);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -284,7 +285,7 @@ header.scrolled {
 }
 
 .hero .highlight {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .hero-subtitle {
@@ -414,7 +415,7 @@ header.scrolled {
     width: 60px;
     height: 60px;
     background: rgba(55, 188, 155, 0.1);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -425,7 +426,7 @@ header.scrolled {
 }
 
 .glass-card:hover .service-icon {
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: var(--white);
     transform: scale(1.1);
 }
@@ -460,7 +461,7 @@ header.scrolled {
 
 .article-meta {
     font-size: 0.85rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: 600;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -491,7 +492,7 @@ header.scrolled {
 }
 
 .read-more:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     gap: 0.8rem;
 }
 
@@ -541,13 +542,13 @@ header.scrolled {
 }
 
 .contact-details a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: 500;
     transition: var(--transition);
 }
 
 .contact-details a:hover {
-    color: var(--secondary-hover);
+    color: var(--primary-color);
 }
 
 .map-container {
@@ -565,7 +566,7 @@ header.scrolled {
 
 /* Footer */
 footer {
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: rgba(255, 255, 255, 0.8);
     padding: 3rem 2rem 1.5rem;
 }
@@ -589,7 +590,7 @@ footer {
 }
 
 .footer-logo span {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 
@@ -678,7 +679,7 @@ footer {
 }
 
 .nav-contact-item:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .nav-contact-item i {
