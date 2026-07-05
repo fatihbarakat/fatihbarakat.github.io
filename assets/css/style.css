@@ -1,39 +1,3 @@
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* cyrillic-ext */
-/* cyrillic */
-/* greek-ext */
-/* greek */
-/* vietnamese */
-/* latin-ext */
-/* latin */
-/* latin-ext */
-/* latin */
-/* latin-ext */
-/* latin */
-/* latin-ext */
-/* latin */
-/* latin-ext */
-/* latin */
 :root {
     /* Color Palette */
     --primary-color: hsl(210, 70%, 40%);
@@ -592,7 +556,6 @@ footer {
 .footer-logo span {
     color: var(--primary-color);
 }
-
 
 .footer-bottom {
     text-align: center;
